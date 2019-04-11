@@ -74,6 +74,20 @@ footer p {
 a.fa {
     text-decoration: none;
     font-size: large;
+
+}
+
+a.fa {
+    width: 40px;
+    text-align: center;
+    padding: 2%;
+    border: hsl(0, 0%, 59%);
+    border-radius: 50%;
+
+}
+
+a.fa.fa-twitter {
+    justify-self: center;
 }
 
 a.fa.fa-facebook-f {
@@ -82,6 +96,11 @@ a.fa.fa-facebook-f {
 
 a.fa.fa-instagram {
     justify-self: left;
+}
+
+a.fa:hover {
+    background-color: hsl(223, 87%, 63%);
+    color: white;
 }
 
 @media only screen and (max-width: 655px) {
@@ -125,6 +144,12 @@ a.fa.fa-instagram {
 
     .socialIcons {
         margin-bottom: 10%;
+    }
+
+    a.fa {
+        font-size: medium;
+        padding: 7%;
+        width: 30px;
     }
 
 }
