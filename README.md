@@ -1,4 +1,5 @@
 # Frontend Mentor - Ping coming soon page
+https://chamumutezva.github.io/Ping-single-column-coming-soon-page/
 
 ![Design preview for the Ping coming soon page coding challenge](./design/desktop-preview.jpg)
 
