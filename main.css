@@ -20,12 +20,19 @@ header img {
 }
 
 input.emailing {
-    margin: 5% auto 2%;
-    width: 30%;
+    /*margin: 5% auto 2%;*/
+    margin-right: 5%;
+    width: 70%;
     height: 7vh;
     border-radius: 30px;
     text-align: center;
+    justify-self: right;
 }
+
+input.emailing:hover{
+   
+}
+
 
 p {
     font-size: large;
@@ -48,12 +55,13 @@ svg * {
 }
 
 input.notify {
-    margin: 2% auto 5%;
-    width: 20%;
+    margin: 0;
+    width: 70%;
     height: 7vh;
     border-radius: 30px;
     background-color: hsl(223, 87%, 63%);
     color: white;
+    justify-self: left;
 }
 
 footer {
@@ -103,6 +111,21 @@ a.fa:hover {
     color: white;
 }
 
+.validation {
+    margin: 5% 0 0 0;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.emailInfo {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+label.message {
+    color: red;
+}
+
 @media only screen and (max-width: 655px) {
     header img {
         width: 20%;
@@ -125,12 +148,13 @@ a.fa:hover {
 
     input.emailing {
         width: 60%;
+        margin: auto;
     }
 
     input.notify {
         display: block;
         width: 60%;
-
+        margin: auto;
     }
 
     img {
@@ -150,6 +174,20 @@ a.fa:hover {
         font-size: medium;
         padding: 7%;
         width: 30px;
+    }
+
+    .validation {
+        grid-template-columns: 1fr;
+    }
+
+    .emailInfo {
+        margin-bottom: 8%;
+    }
+
+    label.message {
+        justify-self: center;
+        margin-top: 5%;
+        /* margin-left: 20%; */
     }
 
 }
