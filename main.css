@@ -8,11 +8,13 @@
 h1 {
     font-weight: 300;
     margin-bottom: 2%;
-    font-size: x-large;
+   
+   /* font-size: x-large;*/
 }
 
 body {
     text-align: center;
+    font-family: "Libre Franklin", sans-serif;
 }
 
 header img {
@@ -27,12 +29,20 @@ input.emailing {
     border-radius: 30px;
     text-align: center;
     justify-self: right;
+    font-size: large;
 }
 
-input.emailing:hover{
+input.notify:hover{
    
 }
 
+.message{
+   width: 70%;
+   height: 4vh;   
+    justify-self: right;
+    margin-top: 5%;
+    line-height: 3em;
+}
 
 p {
     font-size: large;
@@ -74,9 +84,10 @@ footer p {
 }
 
 .socialIcons {
+    width: 50%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    margin-bottom: 5%;
+    margin: 5% auto 5%;
 }
 
 a.fa {
@@ -124,6 +135,7 @@ a.fa:hover {
 
 label.message {
     color: red;
+    font-size: small;
 }
 
 @media only screen and (max-width: 655px) {
@@ -149,6 +161,7 @@ label.message {
     input.emailing {
         width: 60%;
         margin: auto;
+        font-size: small;
     }
 
     input.notify {
