@@ -23,8 +23,8 @@ header img {
 
 input.emailing {
     /*margin: 5% auto 2%;*/
-    margin-right: 5%;
-    width: 70%;
+    margin-right: 2%;
+    width: 60%;
     height: 7vh;
     border-radius: 30px;
     text-align: center;
@@ -39,8 +39,8 @@ input.notify:hover{
 .message{
    width: 70%;
    height: 4vh;   
-    justify-self: right;
-    margin-top: 5%;
+    justify-self: center;
+    margin-top: 1%;
     line-height: 3em;
 }
 
@@ -50,7 +50,7 @@ p {
 }
 
 img {
-    width: 60%;
+    width: 65%;
     margin: 5% auto 5%;
 }
 
@@ -66,7 +66,7 @@ svg * {
 
 input.notify {
     margin: 0;
-    width: 70%;
+    width: 60%;
     height: 7vh;
     border-radius: 30px;
     background-color: hsl(223, 87%, 63%);
@@ -99,7 +99,7 @@ a.fa {
 a.fa {
     width: 40px;
     text-align: center;
-    padding: 2%;
+    padding: 4%;
     border: hsl(0, 0%, 59%);
     border-radius: 50%;
 
@@ -184,9 +184,9 @@ label.message {
     }
 
     a.fa {
-        font-size: medium;
+        font-size: small;
         padding: 7%;
-        width: 30px;
+        width: 20px;
     }
 
     .validation {
