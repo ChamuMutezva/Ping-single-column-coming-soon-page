@@ -8,8 +8,7 @@
 h1 {
     font-weight: 300;
     margin-bottom: 2%;
-   
-   /* font-size: x-large;*/
+    font-size: 48px;
 }
 
 body {
@@ -21,24 +20,30 @@ header img {
     width: 10%;
 }
 
+header p {
+    font-size: x-large;
+}
+
 input.emailing {
     /*margin: 5% auto 2%;*/
     margin-right: 2%;
     width: 60%;
     height: 7vh;
     border-radius: 30px;
-    text-align: center;
+    text-align: left;
     justify-self: right;
     font-size: large;
+    padding-left: 5%;
+    opacity: 0.3;
 }
 
-input.notify:hover{
-   
+span#fadeText {
+    opacity: 0.2;
 }
 
-.message{
-   width: 70%;
-   height: 4vh;   
+.message {
+    width: 70%;
+    height: 4vh;
     justify-self: center;
     margin-top: 1%;
     line-height: 3em;
@@ -47,6 +52,10 @@ input.notify:hover{
 p {
     font-size: large;
     margin: 0 auto;
+}
+
+footer p {
+    opacity: 0.4;
 }
 
 img {
@@ -66,7 +75,7 @@ svg * {
 
 input.notify {
     margin: 0;
-    width: 60%;
+    width: 55%;
     height: 7vh;
     border-radius: 30px;
     background-color: hsl(223, 87%, 63%);
@@ -100,7 +109,7 @@ a.fa {
     width: 40px;
     text-align: center;
     padding: 4%;
-    border: hsl(0, 0%, 59%);
+    border: 1px solid hsl(0, 0%, 59%);
     border-radius: 50%;
 
 }
@@ -123,9 +132,9 @@ a.fa:hover {
 }
 
 .validation {
-    margin: 5% 0 0 0;
+    margin: 3% 0 0 0;
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr 0.7fr;
 }
 
 .emailInfo {
@@ -152,10 +161,13 @@ label.message {
         font-size: small;
         margin: 10% auto;
     }
+    header p {
+        font-size: x-small;
+    }
 
     h1 {
         margin-bottom: 5%;
-        font-size: x-large;
+        font-size: large;
     }
 
     input.emailing {

@@ -8,19 +8,21 @@ function ValidateEmail() {
     console.log(email.value);
     if (re.test(email.value)) {       
         msg.innerHTML = email.value;
+        email.style.border = "1px solid gray";
         return (true);
     } else {
-        msg.innerHTML = "The email provided is not valid!";
+        msg.innerHTML = "Provide a valid email address!";
         email.style.focus;
         email.style.border = "1px solid red";
         return (false);
     }
 }
+/*
 btnNotify.addEventListener("mouseover", function () {
     msg.innerHTML = "Provide a valid email address!";
 }, false);
 btnNotify.addEventListener("mouseout", function () {
     msg.innerHTML = "";
-}, false);
+}, false);*/
 
 btnNotify.addEventListener("click", ValidateEmail, false);
