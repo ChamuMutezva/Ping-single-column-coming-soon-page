@@ -37,16 +37,17 @@
     -->
       <img src="images/logo.svg" class="logo" alt="Ping logo">
       <h1><span id="fadeText">We are launching</span><strong> soon!</strong></h1>
-      <p>Subscribe and get notified</p>
-      <div class="validation">
-        <div class="emailInfo">
-            <input type="email" class="emailing" placeholder="Your email address..." required autocomplete="email">
+      <form method="GET" id="mailingForm">
+        <p>Subscribe and get notified</p>
+        <div class="validation">
+          <div class="emailInfo">
+            <input type="email" name="email" class="emailing" placeholder="Your email address..." aria-required="true" required>
             <label class="message"></label>
-        </div>
-      
-        <input type="button" value="Notify Me" class="notify">
-      </div>
+          </div>
 
+          <input type="button" value="Notify Me" class="notify">
+        </div>
+      </form>
     </header>
     <main>
       <img src="images/illustration-dashboard.png" alt="illustration on dashboard">
