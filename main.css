@@ -29,6 +29,7 @@ input.emailing {
     margin-right: 2%;
     width: 60%;
     height: 7vh;
+    border: 1px solid hsl(0, 0%, 59%);
     border-radius: 30px;
     text-align: left;
     justify-self: right;
@@ -37,6 +38,11 @@ input.emailing {
     opacity: 0.3;
 }
 
+/*  
+input.emailing:hover {
+    box-shadow: 0 0 2px 3px peru;
+}
+ */
 span#fadeText {
     opacity: 0.2;
 }
@@ -161,6 +167,7 @@ label.message {
         font-size: small;
         margin: 10% auto;
     }
+
     header p {
         font-size: x-small;
     }
@@ -171,15 +178,15 @@ label.message {
     }
 
     input.emailing {
-        width: 60%;
+        width: 80%;
         margin: auto;
         font-size: small;
     }
 
     input.notify {
         display: block;
-        width: 60%;
-        margin: auto;
+        width: 80%;
+        margin: -5% auto 0 auto;
     }
 
     img {
@@ -211,7 +218,7 @@ label.message {
 
     label.message {
         justify-self: center;
-        margin-top: 5%;
+        margin-top: 0;
         /* margin-left: 20%; */
     }
 
