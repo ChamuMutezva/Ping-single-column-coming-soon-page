@@ -47,14 +47,6 @@ span#fadeText {
     opacity: 0.2;
 }
 
-.message {
-    width: 70%;
-    height: 4vh;
-    justify-self: center;
-    margin-top: 1%;
-    line-height: 3em;
-}
-
 p {
     font-size: large;
     margin: 0 auto;
@@ -148,13 +140,16 @@ a.fa:hover {
     grid-template-columns: 1fr;
 }
 
-label.message {
+span#errorMsg {
+    text-align: center;
     color: red;
     font-size: small;
 }
 
 label#emailLabel {
     text-align: right;
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
 @media only screen and (max-width: 655px) {
@@ -222,12 +217,6 @@ label#emailLabel {
 
     .emailInfo {
         margin-bottom: 8%;
-    }
-
-    label.message {
-        justify-self: center;
-        margin-top: 0;
-        /* margin-left: 20%; */
     }
 
 }

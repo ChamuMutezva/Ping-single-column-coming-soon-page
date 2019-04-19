@@ -1,23 +1,28 @@
 let email = document.querySelector(".emailing");
 let emailAddress = "";
 let btnNotify = document.querySelector(".notify");
-let msg = document.querySelector(".message");
+let msg = document.querySelector("#errorMsg");
 emailAddress = email.value;
+
 function ValidateEmail() {
     //regex to validate email address
-    var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/; 
-   // console.log(email.value);
-    if (re.test(email.value)) {       
+    var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    // console.log(email.value);
+    if (email.value === "") {
+        msg.innerHTML = "Whoops! It looks like you forgot to add your email";
+        return;
+    }
+   if (re.test(email.value)) {
         msg.innerHTML = "";
         email.style.border = "1px solid gray";
         email.style.opacity = 0.9;
         return (true);
     } else {
         msg.innerHTML = "Provide a valid email address!";
-      // if (window.outerWidth <= 655) {
-          //  btnNotify.style.margin = '5% auto';  
-       // }
-       
+        // if (window.outerWidth <= 655) {
+        //  btnNotify.style.margin = '5% auto';  
+        // }
+
         email.style.focus;
         email.style.border = "1px solid red";
         return (false);
