@@ -38,6 +38,9 @@ input.emailing {
     opacity: 0.3;
 }
 
+input.emailing:invalid {
+    box-shadow: 0 0 2px 3px peru;
+}
 /*  
 input.emailing:hover {
     box-shadow: 0 0 2px 3px peru;
